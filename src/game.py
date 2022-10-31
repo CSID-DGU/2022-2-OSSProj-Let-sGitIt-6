@@ -935,8 +935,8 @@ def gameplay_hard():
                     pm.change_size(15,15)
                     pm.x = round(pking.rect.centerx)
                     pm.y = round(pking.rect.centery)
-                    pm.xmove = random.randint(0,15)
-                    pm.ymove = random.randint(1,3)
+                    pm.x_move = random.randint(0,15)
+                    pm.y_move = random.randint(1,3)
 
                     pm_list.append(pm)
                 pm_pattern0_count += 1
@@ -944,8 +944,8 @@ def gameplay_hard():
 
                 for i in range(len(pm_list)):
                     pm = pm_list[i]
-                    pm.x -= pm.xmove
-                    pm.y += pm.ymove
+                    pm.x -= pm.x_move
+                    pm.y += pm.y_move
                     if pm.y > height or pm.x < 0:
                         pd_list.append(i)
                 pd_list.reverse()
