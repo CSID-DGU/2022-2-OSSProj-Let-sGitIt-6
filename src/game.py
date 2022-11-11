@@ -30,18 +30,18 @@ def intro_screen():
     temp_dino = Dino(dino_size[0], dino_size[1])
     temp_dino.is_blinking = True
     game_start = False
-    background, background_rect  = load_image('intro_bg.png', width, height, -1)
+    background, background_rect  = load_image('intro_background.png', width, height)
     # 버튼 이미지 (pvp모드에 대한 p 주석)
     # r_r_btn_gamestart,_gamestart_oad_image(*resize('r_btn_gamestart.0, 60, -1))
     # r_btn_gamestart,amestart_oad_image('r_btn_gamestart.0, 60, -1)
     # r_btn_2p, r_btn_2p_rect = load_image(*resize('btn_2p.png', 150, 60, -1))
     # btn_2p, btn_2p_rect = load_image('btn_2p.png', 150, 60, -1)
-    r_btn_gamestart, r_btn_gamestart_rect = load_image(*resize('btn_start.png', 150, 50, -1))
-    btn_gamestart, btn_gamestart_rect = load_image('btn_start.png', 150, 50, -1)
-    r_btn_board, r_btn_board_rect = load_image(*resize('btn_board.png', 150, 50, -1))
-    btn_board, btn_board_rect = load_image('btn_board.png', 150, 50, -1)
-    r_btn_option, r_btn_option_rect = load_image(*resize('btn_option.png', 150, 50, -1))
-    btn_option, btn_option_rect = load_image('btn_option.png', 150, 50, -1)
+    r_btn_gamestart, r_btn_gamestart_rect = load_image(*resize('game_start.png', 150, 50, -1))
+    btn_gamestart, btn_gamestart_rect = load_image('game_start.png', 150, 50, -1)
+    r_btn_board, r_btn_board_rect = load_image(*resize('score_board.png', 150, 50, -1))
+    btn_board, btn_board_rect = load_image('score_board.png', 150, 50, -1)
+    r_btn_option, r_btn_option_rect = load_image(*resize('option.png', 150, 50, -1))
+    btn_option, btn_option_rect = load_image('option.png', 150, 50, -1)
     # DINO IMAGE
     while not game_start:
         if pygame.display.get_surface() == None:
@@ -239,7 +239,7 @@ def select_mode():
     
     
     # 배경 이미지
-    Background, Background_rect = load_image('intro_bg.png', width, height, -1)
+    Background, Background_rect = load_image('mode_background.png', width, height)
 
     # 뒤로가기 버튼
     back_btn_rect =  (width * 0.05, height * 0.1)
