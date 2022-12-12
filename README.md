@@ -16,7 +16,8 @@
 </center>
 
 <br>
-# 프로젝트 내용 : <br>
+# 프로젝트 내용 : 
+<br>
 🦕 Chrome 이스터에그 게임 T-rex Rush에 다양한 모션, 공격기능, PVP BATTLE모드, PVP RUNNING모드 상점 기능을 추가하여 흥미를 더한 게임
 
 <br>
