@@ -56,9 +56,9 @@ python run.py
         <img src="sprites/easy_mode_rule.png" width="300" height="200"/>
         <img src="sprites/hard_mode_rule.png" width="300" height="200"/>
         <img src="sprites/pvp_battle_rule.png" width="300" height="200"/>
-        <img src="sprites/pvp_battle_rule2.PNG" width="300" height="200"/>
+        <img src="sprites/pvp_battle_rule_item.png" width="300" height="200"/>
         <img src="sprites/pvp_running_rule.png" width="300" height="200"/>
-        <img src="sprites/pvp_running_rule2.PNG" width="300" height="200"/>
+        <img src="sprites/pvp_running_rule_item.png" width="300" height="200"/>
     </div>
 </center>
 <br>
@@ -73,6 +73,8 @@ python run.py
 [JAEHYUK] : wjdwogur9@naver.com <br>
 [JAEHONG] : asdr111324@gmail.com <br>
 [YOUNGCHUL]: syc5002@naver.com <br>
+
+[게임시연영상] : https://www.youtube.com/watch?v=C-1JHc5rf5M<br>
 
  <br>
 
