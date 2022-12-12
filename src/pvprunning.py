@@ -985,14 +985,6 @@ def pvprunning():
                     if event.type == pygame.QUIT:
                         game_quit = True
                         game_over = False
-                    if event.type == pygame.KEYDOWN:
-                        if event.key == pygame.K_ESCAPE:
-                            game_quit = True
-                            game_over = False
-
-                        if event.key == pygame.K_RETURN or event.key == pygame.K_SPACE:
-                            game_over = False
-                            game_quit = True
 
                     if event.type == pygame.MOUSEBUTTONDOWN:
                         if pygame.mouse.get_pressed() == (1, 0, 0):

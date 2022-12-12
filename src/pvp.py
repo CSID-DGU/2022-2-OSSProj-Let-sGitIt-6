@@ -183,6 +183,7 @@ def pvp():
                         if event.key == pygame.K_o:
                             jumpingx2_2p = False
                     if event.type == pygame.VIDEORESIZE:
+                        # check_scr_size(event.w, event.h)
                         pvp_check_scr_size(event.w,event.h)
 
             if not paused:
@@ -354,18 +355,9 @@ def pvp():
                     if event.type == pygame.QUIT:
                         game_quit = True
                         game_over = False
-                    if event.type == pygame.KEYDOWN:
-                        if event.key == pygame.K_ESCAPE:
-                            game_quit = True
-                            game_over = False
-
-                        if event.key == pygame.K_RETURN or event.key == pygame.K_SPACE:
-                            game_over = False
-                            game_quit = True
+    
 
                     if event.type == pygame.MOUSEBUTTONDOWN:
-                        # game_over = False
-                        # game_quit = True
                         if pygame.mouse.get_pressed() == (1, 0, 0):
                             x, y = event.pos
                             if r_btn_restart_rect.collidepoint(x, y):
