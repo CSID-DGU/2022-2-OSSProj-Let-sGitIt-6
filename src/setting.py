@@ -44,6 +44,8 @@ full_screen = False
 monitor_size = (monitor_width, monitor_height) = (display.Info().current_w,
                                                   display.Info().current_h)
 high_score = 0
+hard_high_score = 0
+easy_high_score = 0
 
 
 # scr_size_pvp = (width, height) = (1200, 400)
