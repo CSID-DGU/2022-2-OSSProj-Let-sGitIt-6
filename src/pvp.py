@@ -21,7 +21,7 @@ def pvp():
     global stones
     global last_obstacle
     global life_item
-    global bgm_on
+
     btn_size_w = 150
     btn_size_h = 80
 

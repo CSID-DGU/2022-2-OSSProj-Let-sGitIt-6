@@ -15,7 +15,7 @@ def pvprunning():
     global game_over
     global paused
     global resized_screen
-    global bgm_on
+
 
     global cacti
     global fire_cacti
@@ -210,7 +210,7 @@ def pvprunning():
                                         water_rest_time = 0
                                     if dust_rest_time_2p != ITEM_TIME:
                                         dust_rest_time_2p = 0
-                                    if ice_rest_time != ITEM_TIME:
+                                    if ice_rest_time != ICE_TIME:
                                         ice_rest_time = 0
                                     # background.update('spring',1)
                                     # background_2p.update(background_2p.name,2)

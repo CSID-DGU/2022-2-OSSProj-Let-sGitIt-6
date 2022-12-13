@@ -105,7 +105,7 @@ def intro_screen():
 def option():
     global on_pushtime
     global off_pushtime
-    global bgm_on
+    
     global hard_high_score
     global easy_high_score
     global resized_screen
@@ -153,15 +153,15 @@ def option():
                     if r_back_btn_rect.collidepoint(x, y):
                         intro_screen()
 
-                    if r_btn_bgm_on_rect.collidepoint(x, y) and bgm_on:
+                    if r_btn_bgm_on_rect.collidepoint(x, y) and setting.bgm_on:
                         off_pushtime = pygame.time.get_ticks()
                         if off_pushtime - on_pushtime > btnpush_interval:
-                            bgm_on = False
+                            setting.bgm_on = False
 
-                    if r_btn_bgm_on_rect.collidepoint(x, y) and not bgm_on:
+                    if r_btn_bgm_on_rect.collidepoint(x, y) and not setting.bgm_on:
                         on_pushtime = pygame.time.get_ticks()
                         if on_pushtime - off_pushtime > btnpush_interval:
-                            bgm_on = True
+                            setting.bgm_on = True
 
                     if r_init_btn_rect.collidepoint(x, y):
                         db.query_db("delete from hard_mode;")
@@ -195,11 +195,11 @@ def option():
         screen.blit(back_btn_image, back_btn_rect)
         screen.blit(btn_credit, btn_credit_rect)
 
-        if bgm_on:
+        if setting.bgm_on:
             screen.blit(btn_bgm_on, btn_bgm_on_rect)
             r_btn_bgm_on_rect.centerx = resized_screen.get_width() * 0.25
             r_btn_bgm_on_rect.centery = resized_screen.get_height() * 0.5
-        if not bgm_on:
+        if not setting.bgm_on:
             screen.blit(btn_bgm_off, btn_bgm_on_rect)
             r_btn_bgm_on_rect.centerx = resized_screen.get_width() * 0.25
             r_btn_bgm_on_rect.centery = resized_screen.get_height() * 0.5
@@ -327,7 +327,7 @@ def gameplay_easy():
     result = db.query_db("select score from easy_mode order by score desc;", one=True)
     if result is not None:
         easy_high_score = result['score']
-    if bgm_on:
+    if setting.bgm_on:
         pygame.mixer.music.play(-1) # 배경음악 실행
     game_speed = 4
     startMenu = False
@@ -662,7 +662,7 @@ def gameplay_hard():
         hard_high_score = result['score']
 
     # HERE: REMOVE SOUND!!    
-    if bgm_on:
+    if setting.bgm_on:
         pygame.mixer.music.play(-1)  # 배경음악 실행
     
     game_speed = GAME_SPEED
