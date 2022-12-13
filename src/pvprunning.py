@@ -250,7 +250,7 @@ def pvprunning():
                                         water_rest_time_2p = 0
                                     if dust_rest_time != ITEM_TIME:
                                         dust_rest_time = 0
-                                    if ice_rest_time_2p != ITEM_TIME:
+                                    if ice_rest_time_2p != ICE_TIME:
                                         ice_rest_time_2p = 0
                                     # background.update(background.name,1)
                                     # background_2p.update('spring',2)

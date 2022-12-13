@@ -77,7 +77,6 @@ pvp_ptera_size = [40, 40]
 collision_immune_time = 500
 shield_time = 2000
 speed_up_limit = 700
-global bgm_on
 bgm_on = True
 jump_sound = mixer.Sound('sprites/jump.wav')
 die_sound = mixer.Sound('sprites/die.wav')
