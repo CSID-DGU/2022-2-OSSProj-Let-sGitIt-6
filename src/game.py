@@ -105,7 +105,7 @@ def intro_screen():
 def option():
     global on_pushtime
     global off_pushtime
-    global bgm_on
+    
     global hard_high_score
     global easy_high_score
     global resized_screen
@@ -327,7 +327,7 @@ def gameplay_easy():
     result = db.query_db("select score from easy_mode order by score desc;", one=True)
     if result is not None:
         easy_high_score = result['score']
-    if bgm_on:
+    if setting.bgm_on:
         pygame.mixer.music.play(-1) # 배경음악 실행
     game_speed = 4
     startMenu = False
@@ -662,7 +662,7 @@ def gameplay_hard():
         hard_high_score = result['score']
 
     # HERE: REMOVE SOUND!!    
-    if bgm_on:
+    if setting.bgm_on:
         pygame.mixer.music.play(-1)  # 배경음악 실행
     
     game_speed = GAME_SPEED
