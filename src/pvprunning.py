@@ -206,11 +206,14 @@ def pvprunning():
                             if event.key == pygame.K_q: # 물약 아이템
                                 if potion_item_count > 0: 
                                     potion_item_count -= 1
-                                    water_rest_time = 0
-                                    dust_rest_time_2p = 0
-                                    ice_rest_time = 0
-                                    background.update('spring',1)
-                                    background_2p.update(background_2p.name,2)
+                                    if water_rest_time != ITEM_TIME:
+                                        water_rest_time = 0
+                                    if dust_rest_time_2p != ITEM_TIME:
+                                        dust_rest_time_2p = 0
+                                    if ice_rest_time != ITEM_TIME:
+                                        ice_rest_time = 0
+                                    # background.update('spring',1)
+                                    # background_2p.update(background_2p.name,2)
                         
                         if not is_ice_time: # 아이스 아이템 먹으면 키 못움직임
                             if event.key == pygame.K_w:
@@ -243,12 +246,14 @@ def pvprunning():
                         if (is_dust_time or is_ice_time_2p or is_water_time_2p): # 방해효과 적용 중일 때만 사용
                             if event.key == pygame.K_i: # 물약 아이템
                                 if potion_item_count_2p > 0 :
-                                    potion_item_count_2p -= 1
-                                    water_rest_time_2p = 0
-                                    dust_rest_time = 0
-                                    ice_rest_time_2p = 0
-                                    background.update(background.name,1)
-                                    background_2p.update('spring',2)
+                                    if water_rest_time_2p != ITEM_TIME:
+                                        water_rest_time_2p = 0
+                                    if dust_rest_time != ITEM_TIME:
+                                        dust_rest_time = 0
+                                    if ice_rest_time_2p != ITEM_TIME:
+                                        ice_rest_time_2p = 0
+                                    # background.update(background.name,1)
+                                    # background_2p.update('spring',2)
      
 
                         if not is_ice_time_2p: # 아이스 아이템 먹으면 키 못움직임
