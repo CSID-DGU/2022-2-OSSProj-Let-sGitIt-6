@@ -7,6 +7,7 @@
 ---
 
 # 프로젝트 제목 : 오픈소스를 활용한 T-Rex Rush 게임 개발:
+
 <center>
     <div style = "padding: 10px 1px 2px 10px;">
         <img src="sprites/screen1.png" width="400" height="250"/>
@@ -15,7 +16,10 @@
 </center>
 
 <br>
-# 프로젝트 내용 : <br>
+
+# 프로젝트 내용 : 
+
+<br>
 🦕 Chrome 이스터에그 게임 T-rex Rush에 다양한 모션, 공격기능, PVP BATTLE모드, PVP RUNNING모드 상점 기능을 추가하여 흥미를 더한 게임
 
 <br>
@@ -56,9 +60,9 @@ python run.py
         <img src="sprites/easy_mode_rule.png" width="300" height="200"/>
         <img src="sprites/hard_mode_rule.png" width="300" height="200"/>
         <img src="sprites/pvp_battle_rule.png" width="300" height="200"/>
-        <img src="sprites/pvp_battle_rule2.PNG" width="300" height="200"/>
+        <img src="sprites/pvp_battle_rule_item.png" width="300" height="200"/>
         <img src="sprites/pvp_running_rule.png" width="300" height="200"/>
-        <img src="sprites/pvp_running_rule2.PNG" width="300" height="200"/>
+        <img src="sprites/pvp_running_rule_item.png" width="300" height="200"/>
     </div>
 </center>
 <br>
@@ -73,6 +77,8 @@ python run.py
 [JAEHYUK] : wjdwogur9@naver.com <br>
 [JAEHONG] : asdr111324@gmail.com <br>
 [YOUNGCHUL]: syc5002@naver.com <br>
+
+[게임시연영상] : https://www.youtube.com/watch?v=C-1JHc5rf5M<br>
 
  <br>
 
